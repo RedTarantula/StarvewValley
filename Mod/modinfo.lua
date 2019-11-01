@@ -1,7 +1,7 @@
 name = "_Starvew Valley"
-description = "Adds new veggies and recipes"
+description = "Adds new veggies and meat-free recipes"
 author = "Red Tarantula"
-version = "0.1" 
+version = "0.2" 
 
 forumthread = ""
 
