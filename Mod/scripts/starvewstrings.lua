@@ -6,22 +6,31 @@ local STRINGS = GLOBAL.STRINGS
 
 STRINGS.NAMES.BLUEBERRIES = "Blueberries"
 STRINGS.NAMES.BLUEBERRIES_COOKED = "Blueberry Jam"
+STRINGS.NAMES.BLUEBERRIES_SEEDS = "Blueberry Seeds"
+
 STRINGS.NAMES.BROCCOLI = "Broccoli"
 STRINGS.NAMES.BROCCOLI_COOKED = "Cooked Broccoli"
+STRINGS.NAMES.BROCCOLI_SEEDS = "Broccoli Seeds"
+
 STRINGS.NAMES.CABBAGE = "Cabbage"
 STRINGS.NAMES.CABBAGE_COOKED = "Cooked Cabbage"
+STRINGS.NAMES.CABBAGE_SEEDS = "Cabbage Seeds"
+
 STRINGS.NAMES.CAULIFLOWER = "Cauliflower"
 STRINGS.NAMES.CAULIFLOWER_COOKED = "Cooked Cauliflower"
+STRINGS.NAMES.CAULIFLOWER_SEEDS = "Cauliflower Seeds"
+
 STRINGS.NAMES.LETTUCE = "Lettuce"
 STRINGS.NAMES.LETTUCE_COOKED = "Ruined Lettuce"
-STRINGS.NAMES.POTATO = "Potato"
-STRINGS.NAMES.POTATO_COOKED = "Baked Potato"
+STRINGS.NAMES.LETTUCE_SEEDS = "Lettuce Seeds"
+
 STRINGS.NAMES.RASPBERRIES = "Raspberries"
 STRINGS.NAMES.RASPBERRIES_COOKED = "Raspberry Jam"
+STRINGS.NAMES.RASPBERRIES_SEEDS = "Raspberry Seeds"
+
 STRINGS.NAMES.STRAWBERRIES = "Strawberries"
 STRINGS.NAMES.STRAWBERRIES_COOKED = "Strawberry Jam"
-STRINGS.NAMES.TOMATO = "Tomato"
-STRINGS.NAMES.TOMATO_COOKED = "Roasted Tomato"
+STRINGS.NAMES.STRAWBERRIES_SEEDS = "Strawberry Seeds"
 
 -- /////////////////////////////////////////////
 
@@ -165,9 +174,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.RASPBERRIES_COOKED = "Very sweet"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.STRAWBERRIES = "The cutest of fruits"
 STRINGS.CHARACTERS.WEBBER.DESCRIBE.STRAWBERRIES_COOKED = "Looks like a good treat"
 
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO = "Lil red globe"
-STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
-
 -- /////////////////////////////////////////////
 
 -- STRINGS.CHARACTERS.WENDY.DESCRIBE = "Lil sweet balls!"
@@ -193,9 +199,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 
 -- STRINGS.CHARACTERS.WENDY.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WENDY.DESCRIBE = "Looks like a good treat"
-
--- STRINGS.CHARACTERS.WENDY.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WENDY.DESCRIBE = "Looks yummy"
 
 -- -- /////////////////////////////////////////////
 
@@ -223,9 +226,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 -- STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE = "Looks like a good treat"
 
--- STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WICKERBOTTOM.DESCRIBE = "Looks yummy"
-
 -- -- /////////////////////////////////////////////
 
 -- STRINGS.CHARACTERS.WX78.DESCRIBE = "Lil sweet balls!"
@@ -251,9 +251,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 
 -- STRINGS.CHARACTERS.WX78.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WX78.DESCRIBE = "Looks like a good treat"
-
--- STRINGS.CHARACTERS.WX78.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WX78.DESCRIBE = "Looks yummy"
 
 -- -- /////////////////////////////////////////////
 
@@ -281,9 +278,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 -- STRINGS.CHARACTERS.GENERIC.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.GENERIC.DESCRIBE = "Looks like a good treat"
 
--- STRINGS.CHARACTERS.GENERIC.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.GENERIC.DESCRIBE = "Looks yummy"
-
 -- -- /////////////////////////////////////////////
 
 -- STRINGS.CHARACTERS.WOLFGANG.DESCRIBE = "Lil sweet balls!"
@@ -309,9 +303,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 
 -- STRINGS.CHARACTERS.WOLFGANG.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WOLFGANG.DESCRIBE = "Looks like a good treat"
-
--- STRINGS.CHARACTERS.WOLFGANG.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WOLFGANG.DESCRIBE = "Looks yummy"
 
 -- -- /////////////////////////////////////////////
 
@@ -339,9 +330,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 -- STRINGS.CHARACTERS.WINONA.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WINONA.DESCRIBE = "Looks like a good treat"
 
--- STRINGS.CHARACTERS.WINONA.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WINONA.DESCRIBE = "Looks yummy"
-
 -- -- /////////////////////////////////////////////
 
 -- STRINGS.CHARACTERS.WOODIE.DESCRIBE = "Lil sweet balls!"
@@ -367,9 +355,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 
 -- STRINGS.CHARACTERS.WOODIE.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WOODIE.DESCRIBE = "Looks like a good treat"
-
--- STRINGS.CHARACTERS.WOODIE.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WOODIE.DESCRIBE = "Looks yummy"
 
 -- -- /////////////////////////////////////////////
 
@@ -397,9 +382,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 -- STRINGS.CHARACTERS.WORMWOOD.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WORMWOOD.DESCRIBE = "Looks like a good treat"
 
--- STRINGS.CHARACTERS.WORMWOOD.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WORMWOOD.DESCRIBE = "Looks yummy"
-
 -- -- /////////////////////////////////////////////
 
 -- STRINGS.CHARACTERS.WORTOX.DESCRIBE = "Lil sweet balls!"
@@ -426,9 +408,6 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 -- STRINGS.CHARACTERS.WORTOX.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WORTOX.DESCRIBE = "Looks like a good treat"
 
--- STRINGS.CHARACTERS.WORTOX.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WORTOX.DESCRIBE = "Looks yummy"
-
 -- -- /////////////////////////////////////////////
 
 -- STRINGS.CHARACTERS.WURT.DESCRIBE = "Lil sweet balls!"
@@ -454,6 +433,3 @@ STRINGS.CHARACTERS.WEBBER.DESCRIBE.TOMATO_COOKED = "Looks yummy"
 
 -- STRINGS.CHARACTERS.WURT.DESCRIBE = "The cutest of fruits"
 -- STRINGS.CHARACTERS.WURT.DESCRIBE = "Looks like a good treat"
-
--- STRINGS.CHARACTERS.WURT.DESCRIBE = "Lil red globe"
--- STRINGS.CHARACTERS.WURT.DESCRIBE = "Looks yummy"

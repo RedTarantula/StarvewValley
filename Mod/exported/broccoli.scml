@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
-    <folder id="0" name="Project/broccoli01">
-        <file id="0" name="Project/broccoli01/broccoli01-0.png" width="128" height="132" pivot_x="0" pivot_y="1"/>
-        <file id="1" name="Project/broccoli01/broccoli01-1.png" width="168" height="159" pivot_x="0" pivot_y="1"/>
+    <folder id="0" name="broccoli01">
+        <file id="0" name="broccoli01/broccoli01-0.png" width="128" height="132" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="broccoli01/broccoli01-1.png" width="168" height="159" pivot_x="0.5" pivot_y="0.5"/>
     </folder>
     <entity id="0" name="broccoli">
-        <animation id="0" name="idle_90s" length="1000" interval="100">
+        <animation id="0" name="idle" length="1000" interval="100">
             <mainline>
                 <key id="0">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
                 </key>
             </mainline>
-            <timeline id="0" name="broccoli01-0">
+            <timeline id="0" name="broccoli01-0_000">
                 <key id="0" spin="0">
-                    <object folder="0" file="0" x="13" y="88" angle="313.658872"/>
+                    <object folder="0" file="0" x="11.205167" y="-1.34225" angle="314.109464" scale_x="0.983148" scale_y="0.983148"/>
                 </key>
             </timeline>
         </animation>
-        <animation id="1" name="cooked_90s" length="1000" interval="100">
+        <animation id="1" name="cooked" length="1000" interval="100">
             <mainline>
                 <key id="0">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
                 </key>
             </mainline>
-            <timeline id="0" name="broccoli01-0">
+            <timeline id="0" name="broccoli01-1">
                 <key id="0" spin="0">
-                    <object folder="0" file="1" x="-45" y="115" angle="352.06445"/>
+                    <object folder="0" file="1" x="25.284642" y="25.58775" scale_x="0.860531" scale_y="0.860531"/>
                 </key>
             </timeline>
         </animation>

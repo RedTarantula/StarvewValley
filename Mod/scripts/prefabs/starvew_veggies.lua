@@ -20,28 +20,25 @@ local RARE = .5
 
 STARVEW_VEGGIES =
 {
-    blueberries = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
+    blueberries = MakeVegStats(COMMON,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
                                     TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
 									
-    broccoli = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
+    broccoli = MakeVegStats(COMMON,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
                                     TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
 									
-    cabbage = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
+    cabbage = MakeVegStats(COMMON,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
                                     TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
 									
-    cauliflower = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
+    cauliflower = MakeVegStats(COMMON,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
                                     TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
 									
-    lettuce = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
+    lettuce = MakeVegStats(COMMON,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
                                     TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
 																	
-    raspberries = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
+    raspberries = MakeVegStats(COMMON,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
                                     TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
 									
-    strawberries = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
-                                    TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
-									
-    tomato = MakeVegStats(0,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
+    strawberries = MakeVegStats(COMMON,   TUNING.CALORIES_SMALL,  TUNING.HEALING_TINY,    TUNING.PERISH_MED, 0,       
                                     TUNING.CALORIES_SMALL,  TUNING.HEALING_SMALL,   TUNING.PERISH_FAST, 0),
 }
 
@@ -72,6 +69,8 @@ local function MakeVeggie(name, has_seeds)
     
     if has_seeds then
         table.insert(prefabs, name.."_seeds")
+        table.insert(prefabs, "seeds_cooked")
+        table.insert(assets, Asset("ATLAS", "images/inventoryimages/"..name.."_seeds.xml"))
     end
 
     local function fn_seeds()
@@ -106,8 +105,10 @@ local function MakeVeggie(name, has_seeds)
         inst:AddComponent("inspectable")
 		
         inst:AddComponent("inventoryitem")
-
+		inst.components.inventoryitem.atlasname = "images/inventoryimages/"..name.."_seeds.xml"
+	
         inst.AnimState:PlayAnimation("idle")
+
         inst.components.edible.healthvalue = TUNING.HEALING_TINY/2
         inst.components.edible.hungervalue = TUNING.CALORIES_TINY
 
@@ -141,11 +142,10 @@ local function MakeVeggie(name, has_seeds)
         inst.AnimState:SetBank(name)
         inst.AnimState:SetBuild(name)
         inst.AnimState:PlayAnimation("idle")
-		inst.AnimState:SetRayTestOnBB(true)
+		--inst.AnimState:SetRayTestOnBB(true)
 
         --cookable (from cookable component) added to pristine state for optimization
         inst:AddTag("cookable")
-
         inst.entity:SetPristine()
 
         if not TheWorld.ismastersim then
@@ -196,6 +196,7 @@ local function MakeVeggie(name, has_seeds)
         inst.entity:AddAnimState()
         inst.entity:AddNetwork()
 
+		MakeSmallPropagator(inst)	
         MakeInventoryPhysics(inst)
 
         inst.AnimState:SetBank(name)
@@ -256,6 +257,7 @@ for veggiename,veggiedata in pairs(STARVEW_VEGGIES) do
     if seeds then
         table.insert(prefs, seeds)
     end
+	
 end
 
 return unpack(prefs)
