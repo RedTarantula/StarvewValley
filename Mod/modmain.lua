@@ -16,5 +16,10 @@ AddIngredientValues({"lettuce"}, {veggie=.5}, true)
 AddIngredientValues({"raspberries"}, {fruit=.5, sweetener =1}, true)
 AddIngredientValues({"strawberries"}, {fruit=.5, sweetener =1}, true)
 
-
-	
+if GLOBAL.TheNet:GetIsServer() then	
+AddSimPostInit(function(inst)
+    for key, val in pairs(GLOBAL.STARVEW_VEGGIES) do
+        GLOBAL.VEGGIES[key] = val
+    end
+end)
+end
