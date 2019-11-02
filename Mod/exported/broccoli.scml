@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
-    <folder id="0" name="Project/blueberries01">
-        <file id="0" name="Project/blueberries01/blueberries01-0.png" width="98" height="93" pivot_x="0" pivot_y="1"/>
-        <file id="1" name="Project/blueberries01/blueberries01-1.png" width="104" height="157" pivot_x="0" pivot_y="1"/>
-    </folder>
-    <folder id="1" name="Project/broccoli01">
+    <folder id="0" name="Project/broccoli01">
         <file id="0" name="Project/broccoli01/broccoli01-0.png" width="128" height="132" pivot_x="0" pivot_y="1"/>
         <file id="1" name="Project/broccoli01/broccoli01-1.png" width="168" height="159" pivot_x="0" pivot_y="1"/>
     </folder>
-    <entity id="0" name="blueberries">
+    <entity id="0" name="broccoli">
         <animation id="0" name="idle_90s" length="1000" interval="100">
             <mainline>
                 <key id="0">
@@ -17,7 +13,7 @@
             </mainline>
             <timeline id="0" name="broccoli01-0">
                 <key id="0" spin="0">
-                    <object folder="1" file="0" x="-43" y="91"/>
+                    <object folder="0" file="0" x="13" y="88" angle="313.658872"/>
                 </key>
             </timeline>
         </animation>
@@ -29,7 +25,7 @@
             </mainline>
             <timeline id="0" name="broccoli01-0">
                 <key id="0" spin="0">
-                    <object folder="1" file="1" x="-56" y="97"/>
+                    <object folder="0" file="1" x="-45" y="115" angle="352.06445"/>
                 </key>
             </timeline>
         </animation>

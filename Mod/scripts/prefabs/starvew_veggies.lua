@@ -58,11 +58,13 @@ local function MakeVeggie(name, has_seeds)
     local assets =
     {
         Asset("ANIM", "anim/"..name..".zip"),
+		Asset("ATLAS", "images/inventoryimages/"..name..".xml"),
     }
 
     local assets_cooked =
     {
         Asset("ANIM", "anim/"..name..".zip"),
+		Asset("ATLAS", "images/inventoryimages/"..name.."_cooked.xml"),
     }
     
     local prefabs =
@@ -105,6 +107,7 @@ local function MakeVeggie(name, has_seeds)
 
         inst:AddComponent("tradable")
         inst:AddComponent("inspectable")
+		
         inst:AddComponent("inventoryitem")
 
         inst.AnimState:PlayAnimation("idle")
@@ -141,6 +144,7 @@ local function MakeVeggie(name, has_seeds)
         inst.AnimState:SetBank(name)
         inst.AnimState:SetBuild(name)
         inst.AnimState:PlayAnimation("idle")
+		inst.AnimState:SetRayTestOnBB(true)
 
         --cookable (from cookable component) added to pristine state for optimization
         inst:AddTag("cookable")
@@ -167,6 +171,7 @@ local function MakeVeggie(name, has_seeds)
 
         inst:AddComponent("inspectable")
         inst:AddComponent("inventoryitem")
+	inst.components.inventoryitem.atlasname = "images/inventoryimages/"..name..".xml"
 
         MakeSmallBurnable(inst)
         MakeSmallPropagator(inst)
@@ -199,6 +204,7 @@ local function MakeVeggie(name, has_seeds)
         inst.AnimState:SetBank(name)
         inst.AnimState:SetBuild(name)
         inst.AnimState:PlayAnimation("cooked")
+		inst.AnimState:SetRayTestOnBB(true)
 
         inst.entity:SetPristine()
 
@@ -222,6 +228,7 @@ local function MakeVeggie(name, has_seeds)
 
         inst:AddComponent("inspectable")
         inst:AddComponent("inventoryitem")
+	inst.components.inventoryitem.atlasname = "images/inventoryimages/"..name.."_cooked.xml"
 
         MakeSmallBurnable(inst)
         MakeSmallPropagator(inst)

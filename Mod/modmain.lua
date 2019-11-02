@@ -2,6 +2,55 @@ PrefabFiles = {
 	"starvew_veggies"
 	}
 
+-- Assets = {
+	
+	-- Asset( "IMAGE", "images/inventoryimages/blueberries.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/blueberries.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/blueberries_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/blueberries_cooked.xml" ),
+	
+	-- Asset( "IMAGE", "images/inventoryimages/broccoli.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/broccoli.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/broccoli_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/broccoli_cooked.xml" ),
+	
+	-- Asset( "IMAGE", "images/inventoryimages/cabbage.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/cabbage.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/cabbage_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/cabbage_cooked.xml" ),
+	
+	-- Asset( "IMAGE", "images/inventoryimages/cauliflower.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/cauliflower.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/cauliflower_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/cauliflower_cooked.xml" ),
+	
+	-- Asset( "IMAGE", "images/inventoryimages/lettuce.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/lettuce.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/lettuce_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/lettuce_cooked.xml" ),
+	
+	-- Asset( "IMAGE", "images/inventoryimages/potato.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/potato.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/potato_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/potato_cooked.xml" ),
+	
+	-- Asset( "IMAGE", "images/inventoryimages/raspberries.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/raspberries.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/raspberries_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/raspberries_cooked.xml" ),
+
+	-- Asset( "IMAGE", "images/inventoryimages/strawberries.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/strawberries.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/strawberries_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/strawberries_cooked.xml" ),
+	
+	-- Asset( "IMAGE", "images/inventoryimages/tomato.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/tomato.xml" ),
+	-- Asset( "IMAGE", "images/inventoryimages/tomato_cooked.tex" ),
+	-- Asset( "ATLAS", "images/inventoryimages/tomato_cooked.xml" )
+-- }
+
+
 local G = GLOBAL
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
