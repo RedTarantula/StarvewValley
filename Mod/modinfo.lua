@@ -3,8 +3,6 @@ description = "Adds new veggies and meat-free recipes"
 author = "Red Tarantula"
 version = "0.2" 
 
-forumthread = ""
-
 api_version = 10
 
 dst_compatible = true
